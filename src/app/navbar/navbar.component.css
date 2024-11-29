@@ -1,0 +1,40 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #444;
+    color: white;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,72 @@
+<div class="portfolio-container">
+    <!-- Master Menu -->
+    <button class="master-menu-btn" (click)="toggleMenu()" [ngClass]="{'master-menu-btn-open': menuOpen== true}">
+      ☰ Menu
+    </button>
+  
+    <!-- Navbar Component -->
+    <app-navbar
+      [menuOpen]="menuOpen"
+      (menuClosed)="menuOpen = false"
+    ></app-navbar>
+  
+    <!-- Content Sections -->
+    <div class="content">
+      <section id ="NameandJob">
+        <h1>SAKTHI SAILESHRAM S R </h1>
+        <h3> Software Developer (Full stack Developer)</h3>
+      </section>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! sir /madam my name is Sakthi Saileshram SR,<br>
+           a passionate Full Stack Developer with expertise in building scalable and efficient web applications. I have experience working with modern front-end and back-end technologies to deliver end-to-end solutions. My passion for learning and problem-solving keeps me at the forefront of the tech world, enabling me to venture out and explore new technologies and tools that are available in this fast paced tech saavy wolrd . </p>
+      </section>
+
+      <section id="skills">
+        <h1>Skills</h1>
+        <p>I have expertise in both front-end and back-end technologies. Here are some of the tools and technologies I've worked with:</p>
+        <ul>
+          <li><img src="../icons/logo-javascript.svg">HTML5, CSS, JavaScript</li>
+          <li>Angular</li>
+          <li>TypeScript</li>
+          <li>Database Management (MySQL)</li>
+          <li>RESTful APIs</li>
+          <li>Version Control (Git, GitHub)</li>
+          <li>dot net frame works </li>
+          <li>entity frame works </li>
+        </ul>
+      </section>
+  
+      <section id="experience">
+        <h1>Experience</h1>
+        <p>As a Full Stack Developer, I've worked with cross-functional teams to develop web applications from the ground up, managing both client and server-side technologies.</p>
+        <ul>
+          <li><strong>Software Engineer at XYZ Tech Inc.</strong> - (2022–Present)</li>
+          <p>Developed and maintained full-stack applications using Angular, Node.js, and MongoDB.</p>
+          <li><strong>Junior Full Stack Developer at ABC Solutions</strong> - (2020–2022)</li>
+          <p>Worked on building responsive front-end applications with React and integrated them with back-end services using Express.js and MySQL.</p>
+        </ul>
+      </section>
+  
+      <section id="projects">
+        <h1>Projects</h1>
+        <p>Check out some of the projects I've worked on:</p>
+        <ul>
+          <li><strong>Portfolio Website</strong> - A responsive personal portfolio website to showcase my skills and experience.</li>
+          <li><strong>E-commerce Platform</strong> - Developed a full-fledged e-commerce application using React and Node.js, including payment gateway integration.</li>
+          <li><strong>Task Management System</strong> - A task management tool with user authentication and real-time collaboration features using Angular and Firebase.</li>
+        </ul>
+      </section>
+  
+      <section id="contact">
+        <h1>Contact</h1>
+        <p>Feel free to reach out to me via email or connect with me on social media!</p>
+        <ul>
+          <li>Email: </li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/sakthi-saileshram" target="_blank">linkedin.com/in/sakthi-saileshram</a></li>
+          <li>GitHub: <a href="https://github.com/sakthi-saileshram" target="_blank">github.com/sakthi-saileshram</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  
