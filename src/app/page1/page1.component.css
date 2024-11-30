@@ -61,16 +61,106 @@ body, html {
     text-align: center;
     background-color: #444;
     color: #fff;
-    
+    font-size: 5.5rem;
+
 
 
   }
-  #about,#experience, #projects, #contact,#skills {
+ #experience, #projects, #contact,#skills {
     padding: 20px;
     max-width: 800px;
     text-align: center;
     margin: 0 auto; /* Center the about section */
+    min-height: 538px;
+
+
   }
+
+  /* experience section css  */
+
+  #experience {
+    padding: 40px 20px;
+    min-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  #experience h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .experience-container {
+    display: flex;
+    justify-content: space-between; /* Add space between items */
+    gap: 20px; /* Gap between items */
+  }
+  
+  .experience-item {
+    flex: 1; /* Ensures equal width */
+    max-width: 45%; /* Limits width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Includes padding in width calculation */
+    max-height: fit-content;
+  }
+  
+  .experience-item h2, 
+  .experience-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .experience-item .duration {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .experience-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .experience-item ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .experience-item ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  
+  .experience-item ul ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  
+  /* --------ecperience section ends-------------- */
+
+
+  #about {
+    padding: 20px;
+    max-width: 800px;
+    text-align: justify; /* Spread text to fill the width */
+    margin: 0 auto;
+    min-height: 538px;
+    padding-top: 311px;
+    font-size: 5.5rem !important;
+    line-height: 1.2; /* Adjust line height for readability */
+    word-spacing: 0.1rem; /* Slightly space out words for better alignment */
+    hyphens: auto; /* Enable hyphenation for better text justification */
+}
 
   
   section {
